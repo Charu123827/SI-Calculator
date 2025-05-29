@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header><b>S.I.Calculator</b></header><br>
+
+    <main>
+    <form onsubmit="event.preventDefault()">
+        <label>Principal Amount</label>
+        <input type="text" name="p" id="p"><br><br>
+        <label>Rate of Interest</label>
+        <input type="text" name="r" id="r"><br><br>
+        <label>No. of year(year)</label>
+        <input type="text" name="y" id="y"><br><br>
+
+        <input type="submit" onclick="calculate()" value="Calculate" id="btn">
+    </form>
+    <p id="interest"></p>
+    <p id="total"></p>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>
